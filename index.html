@@ -289,7 +289,105 @@ footer{
     padding:40px;
     color:#777;
 }
+/* ===== CONTACT SECTION ===== */
+.contact-section{
+    padding:120px 8%;
+    text-align:center;
+}
 
+.contact-section h2{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#888;
+    margin-bottom:60px;
+}
+
+/* GRID */
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+/* CARD */
+.contact-card{
+    text-align:left;
+    padding:40px;
+    border-radius:16px;
+
+    background:rgba(255,255,255,0.02);
+    border:1px solid rgba(255,255,255,0.08);
+
+    transition:0.3s ease;
+}
+
+.contact-card:hover{
+    transform:translateY(-6px);
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+/* TAG */
+.tag{
+    font-size:0.8rem;
+    letter-spacing:1px;
+    color:#4C5BFF;
+    margin-bottom:15px;
+}
+
+/* TEXT */
+.contact-card h3{
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+
+.contact-card p{
+    color:#aaa;
+    margin-bottom:25px;
+}
+
+/* BUTTON */
+.contact-btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:#fff;
+    color:#000;
+    text-decoration:none;
+    border-radius:999px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* STATUS */
+.status{
+    display:block;
+    margin-top:20px;
+    font-size:0.9rem;
+    color:#777;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-section h2{
+    font-size:2rem;
+}
+
+.contact-card{
+    padding:25px;
+}
+
+}
 </style>
 </head>
 
@@ -372,7 +470,40 @@ footer{
     <p>Ready to turn attention into impact?</p>
     <a href="#" class="btn">Start a Project</a>
 </section>
+<section class="contact-section">
 
+    <h2>Let’s Work Together</h2>
+    <p class="subtitle">
+        Choose how you want to reach us — we respond fast.
+    </p>
+
+    <div class="contact-grid">
+
+        <!-- DISCORD -->
+        <div class="contact-card">
+            <p class="tag">INSTANT RESPONSE</p>
+            <h3>Chat on Discord</h3>
+            <p>Real-time responses for quick questions and instant quotes.</p>
+
+            <a href="#" class="contact-btn">Join Our Discord →</a>
+
+            <span class="status">⚡ Usually online · 7 days a week</span>
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="contact-card">
+            <p class="tag">QUICK CHAT</p>
+            <h3>WhatsApp Us</h3>
+            <p>Direct chat for quick questions and project updates.</p>
+
+            <a href="https://wa.me/919835917035" class="contact-btn">Message on WhatsApp →</a>
+
+            <span class="status">💬 Replies within minutes</span>
+        </div>
+
+    </div>
+
+</section>
 <footer>
 © 2026 Framivo Creative Studio
 </footer>
