@@ -391,6 +391,64 @@ footer{
 }
 
 }
+    /* ===== SHORT FORM SECTION ===== */
+.shorts-section{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.shorts-section h2{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.shorts-section .subtitle{
+    color:#888;
+    margin-bottom:50px;
+}
+
+/* GRID */
+.shorts-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    justify-items:center;
+}
+
+/* VIDEO BOX (VERTICAL RATIO) */
+.short-box{
+    width:220px;
+    height:390px; /* 9:16 ratio */
+    border-radius:16px;
+    overflow:hidden;
+    transition:0.3s ease;
+}
+
+.short-box iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* HOVER EFFECT */
+.short-box:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 40px rgba(76,91,255,0.25);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.shorts-section h2{
+    font-size:2rem;
+}
+
+.short-box{
+    width:180px;
+    height:320px;
+}
+
+}
 </style>
 </head>
 
@@ -449,6 +507,8 @@ footer{
 </section>
 
 <section class="showcase">
+
+    
     <h2>Our Work</h2>
 
     <div class="video-grid">
@@ -466,6 +526,29 @@ footer{
         </div>
 
     </div>
+</section>
+
+    <section class="shorts-section">
+
+    <h2>Short-Form Edits</h2>
+    <p class="subtitle">Built for attention. Optimized for scroll.</p>
+
+    <div class="shorts-grid">
+
+        <div class="short-box">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+        </div>
+
+        <div class="short-box">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+        </div>
+
+        <div class="short-box">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+        </div>
+
+    </div>
+
 </section>
 
 <section class="contact">
