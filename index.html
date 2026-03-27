@@ -449,6 +449,27 @@ footer{
 }
 
 }
+    html{
+    scroll-behavior:smooth;
+}
+    nav a{
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#fff;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
 </style>
 </head>
 
@@ -460,15 +481,15 @@ footer{
     <div class="logo">
     <img src="Images/Fr - 2 - Edited.png" alt="Framivo Logo">
 </div>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<section class="hero">
+<section id="home" class="hero">
     <h1>We Don't Edit Videos.<br>We <span>Engineer Attention.</span></h1>
     <p>Framivo builds scroll-stopping visuals designed for retention and impact.</p>
     <a href="#" class="btn">View Work</a>
@@ -484,7 +505,7 @@ footer{
     </section>
 
 
-<section class="Services">
+<section id="services" class="services">
     <h2>What We Build</h2>
 
     <div class="service-grid">
@@ -533,7 +554,7 @@ footer{
 </section>-->
     
 
-    <section class="shorts-section">
+    <section id="work" class="showcase">
 
     <h2>Short-Form Edits</h2>
     <p class="subtitle">Built for attention. Optimized for scroll.</p>
@@ -565,7 +586,7 @@ footer{
     <p>Ready to turn attention into impact?</p>
     <a href="#" class="btn">Start a Project</a>
 </section>
-<section class="contact-section">
+<section id="contact" class="contact-section">
 
     <h2>Let’s Work Together</h2>
     <p class="subtitle">
